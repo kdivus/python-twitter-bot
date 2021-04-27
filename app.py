@@ -8,7 +8,7 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 user = api.me()
 
-search = 'Swissborg'
+search = 'your search term'
 nrTweets = 100
 
 for tweet in tweepy.Cursor(api.search, search).items(nrTweets):
